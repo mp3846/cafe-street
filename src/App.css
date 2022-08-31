@@ -40,12 +40,16 @@
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 2.5rem;
+	margin-top: 2.2rem;
 	width: 80%;
 }
 
+.navbar-logo {
+	flex: 1;
+}
+
 .navbar-items {
-	margin-left: 3.5rem;
+	flex: 1;
 }
 
 .navbar-item {
@@ -56,4 +60,31 @@
 
 .navbar-item:active {
 	color: var(--color-first);
+}
+
+.navbar-search {
+	background-color: white;
+	border-radius: 2rem;
+	width: 20%;
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-search::before {
+	content: url('../src/img/icons/magnifier.svg');
+	height: 1.4rem;
+	margin: 0 0.8rem 0 0.2rem;
+}
+
+.navbar-search input {
+	padding: 0;
+	border: none;
+	font-size: 0.8rem;
+	outline: none;
+	width: 80%;
+}
+
+.navbar-cart {
+	margin-left: 1.5rem;
 }
