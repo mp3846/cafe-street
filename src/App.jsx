@@ -1,6 +1,7 @@
 import './App.css'
 import { memo } from 'react'
+import AppRoutes from './components/appRoutes'
 
-const App = memo(() => <div className='App-container'>App</div>)
+const App = memo(() => <AppRoutes />)
 
 export default App
