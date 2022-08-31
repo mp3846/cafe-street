@@ -1,9 +1,11 @@
 import { memo } from 'react'
-import icon_cart from '../img/icons/icons_cart.svg'
+import hero_bg from '../img/hero_bg.webp'
+import Navbar from './navbar'
 
 const Hero = memo(() => (
 	<div className='hero-container'>
-		<img src={icon_cart} alt='cart icon' />
+		<img className='hero-bg-img' src={hero_bg} alt='coffee sand background' />
+		<Navbar />
 	</div>
 ))
 
