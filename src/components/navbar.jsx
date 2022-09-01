@@ -8,7 +8,7 @@ const Navbar = memo(() => (
 			<img src={cafe_street_logo} alt='cafe street logo' />
 		</div>
 		<div className='navbar-items'>
-			<span className='navbar-item'>About us</span>
+			<span className='navbar-item active'>About us</span>
 			<span className='navbar-item'>Our Product</span>
 			<span className='navbar-item'>Delivery</span>
 		</div>
