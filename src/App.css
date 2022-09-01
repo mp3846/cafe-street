@@ -4,6 +4,8 @@
 	--color-first: #ff902a;
 	--color-second: #2f2105;
 	--color-third: #f9d9aa;
+	--color-forth: #f4ae26;
+	--color-box-shadow: #0000001a;
 }
 
 *,
@@ -35,14 +37,84 @@
 	z-index: -1;
 }
 
+.hero-wrapper {
+	align-items: flex-start;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.hero-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-top: 8.5rem;
+	width: 45%;
+}
+
+.hero-slogan {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.hero-content-wrapper p {
+	font-size: 1.2rem;
+	width: 85%;
+}
+
+.hero-cta-wrapper {
+	align-items: center;
+	display: flex;
+	gap: 3rem;
+}
+
+.hero-cta-wrapper .hc-order {
+	background-color: var(--color-second);
+	border-radius: 4rem;
+	color: white;
+	padding: 0.6rem 2rem;
+}
+
+.hero-cta-wrapper div span::before {
+	background-color: var(--color-first);
+	border-radius: 4rem;
+	content: url('../src/img/icons/icons_cart_empty.svg');
+	margin-left: 0.5rem;
+	padding: 0 0.36rem;
+	vertical-align: middle;
+}
+
+.hero-cta-wrapper .hc-more {
+	color: var(--color-forth);
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.hero-slogan span {
+	color: var(--color-first);
+}
+
+.hero-image-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	position: relative;
+	width: 50%;
+}
+
+.hero-tags {
+	max-width: max-content;
+}
+
 .hero-tags > span {
 	background: white 0 / cover padding-box;
 	border-radius: 10rem;
+	border: solid 0.4rem #ffffff70;
+	box-shadow: -5px 20px 20px var(--color-box-shadow);
 	font-size: 1.5rem;
 	font-weight: 600;
 	padding: 0.7rem 2rem;
 	position: relative;
-	border: solid 0.4rem #ffffff70;
 }
 
 .hero-tags > span::before {
@@ -58,14 +130,14 @@
 }
 
 .ht-product-name > span {
-	left: 13rem;
+	left: 4.5rem;
 	padding: 0.7rem 3rem;
 	position: relative;
 	top: 7rem;
 }
 
 .ht-rating {
-	left: 30.5rem;
+	left: 26rem;
 	position: relative;
 	top: 8.5rem;
 }
@@ -80,8 +152,8 @@
 	vertical-align: middle;
 }
 
-.ht-ordered-times > span {
-	left: 14rem;
+.ht-likes > span {
+	left: 10rem;
 	padding: 0.7rem 3rem;
 	position: relative;
 	top: 20rem;
@@ -115,12 +187,13 @@
 }
 
 .navbar-search {
+	align-items: center;
 	background-color: white;
 	border-radius: 2rem;
-	width: 20%;
-	padding: 0.5rem;
+	box-shadow: -5px 10px 20px var(--color-box-shadow);
 	display: flex;
-	align-items: center;
+	padding: 0.5rem;
+	width: 20%;
 }
 
 .navbar-search::before {
