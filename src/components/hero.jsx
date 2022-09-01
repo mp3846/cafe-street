@@ -8,9 +8,9 @@ const Hero = memo(() => (
 		<Navbar />
 		<div className='hero-wrapper'>
 			<div className='hero-content-wrapper'>
-				<div className='hero-slogan'>
+				<h1 className='hero-slogan'>
 					Enjoy your <span>coffee</span> before your activity
-				</div>
+				</h1>
 				<p>
 					Boost your productivity and build your mood with a glass of coffee in the
 					morning
