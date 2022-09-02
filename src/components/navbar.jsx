@@ -1,6 +1,6 @@
 import { memo } from 'react'
-import cafe_street_logo from '../img/icons/cafe_street-logo.svg'
-import icon_cart from '../img/icons/icons_cart.svg'
+import cafe_street_logo from '../img/icons/cafe_street_logo.svg'
+import SVGCart from './svgCart'
 
 const Navbar = memo(() => (
 	<div className='navbar-container'>
@@ -15,7 +15,7 @@ const Navbar = memo(() => (
 		<div className='navbar-search'>
 			<input placeholder='Cappuccino' />
 		</div>
-		<img className='navbar-cart cp' src={icon_cart} alt='cart icon' />
+		<SVGCart className='navbar-cart' strokeColor='#000' withBadge />
 	</div>
 ))
 

@@ -1,6 +1,8 @@
 import { memo } from 'react'
 import hero_bg from '../img/hero_bg.webp'
 import Navbar from './navbar'
+import SVGCart from './svgCart'
+import SVGStar from './svgStar'
 
 const Hero = memo(() => (
 	<div className='hero-container'>
@@ -17,7 +19,8 @@ const Hero = memo(() => (
 				</p>
 				<div className='hero-cta-wrapper'>
 					<div className='hero-cta hc-order cp'>
-						Order now <span></span>
+						Order now
+						<SVGCart className='hero-cta-cart' width='25' height='25' />
 					</div>
 					<span className='hero-cta hc-more cp'>More menu</span>
 				</div>
@@ -28,7 +31,8 @@ const Hero = memo(() => (
 				</div>
 				<div className='hero-tags ht-rating'>
 					<span>
-						4.8<span></span>
+						4.8
+						<SVGStar className='hero-rating-star' />
 					</span>
 				</div>
 				<div className='hero-tags ht-likes'>
