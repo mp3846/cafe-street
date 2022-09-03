@@ -24,6 +24,10 @@ h2 {
 	font-weight: 600;
 }
 
+h4 {
+	font-size: 1.4rem;
+}
+
 .cp {
 	cursor: pointer;
 }
@@ -377,7 +381,7 @@ h2 {
 	padding: 0 8rem;
 }
 
-.delivery-container h2 span{
+.delivery-container h2 span {
 	border-bottom: solid 4px var(--color-first);
 }
 
@@ -410,4 +414,77 @@ h2 {
 .delivery-item > span:first-of-type {
 	font-weight: bold;
 	margin-top: 1rem;
+}
+
+/*** ABOUT US ***/
+.about-us-container {
+	background-image: url('/src/img/about-us-bg.webp');
+	background-size: contain;
+	box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	margin-top: 14rem;
+	padding-top: 33.61%;
+	position: relative;
+	width: 100%;
+}
+
+.about-us-container > div {
+	display: flex;
+	gap: 4rem;
+	position: absolute;
+	top: 0;
+	width: 70%;
+}
+
+.about-us-container img {
+	background: white 0 / cover padding-box;
+	border-radius: 1.5rem;
+	border: solid 0.4rem #ffffff70;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+	margin-top: -7rem;
+	position: relative;
+}
+
+.about-us-container img::before {
+	backdrop-filter: blur(2px);
+	border-radius: 10rem;
+	bottom: -0.4rem;
+	content: '';
+	left: -0.4rem;
+	position: absolute;
+	right: -0.4rem;
+	top: -0.4rem;
+	z-index: -1;
+}
+
+.about-content {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2rem 0 0 6rem;
+}
+
+.about-content h2 span {
+	border-bottom: solid 4px var(--color-first);
+}
+
+.about-content h4 {
+	width: 80%;
+}
+
+.about-content p {
+	color: #7e7d7a;
+}
+
+.about-cta {
+	background-color: var(--color-second);
+	border-radius: 10rem;
+	color: #f4ae26;
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-top: 1rem;
+	max-width: max-content;
+	padding: 0.6rem 1.5rem;
 }
