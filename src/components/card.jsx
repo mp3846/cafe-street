@@ -2,7 +2,7 @@ import { memo } from 'react'
 import SVGCart from './svgCart'
 import SVGStar from './svgStar'
 
-const Card = memo(({ title, likes, rating, img, alt = 'image' }) => (
+const Card = memo(({ title, description, likes, rating, img, alt = 'image' }) => (
 	<div className='card-container'>
 		<div className='card-image-wrapper'>
 			<span className='card-image-rating'>
@@ -11,15 +11,18 @@ const Card = memo(({ title, likes, rating, img, alt = 'image' }) => (
 			</span>
 			<img src={img} alt={alt} />
 		</div>
-		<div className='card-name-wrapper'>
+		<div className='card-title-wrapper'>
 			<span>{title}</span>
 			<span>{likes}</span>
 		</div>
 		<div className='card-cta-wrapper'>
-			<div>
-				<span className='card-cta cp active'>Hot</span>
-				<span className='card-cta cp disabled'>Cold</span>
-			</div>
+			{description && <span className='card-description'>{description}</span>}
+			{!description && (
+				<div>
+					<span className='card-cta cp active'>Hot</span>
+					<span className='card-cta cp disabled'>Cold</span>
+				</div>
+			)}
 			<SVGCart className='card-cart cp' />
 		</div>
 	</div>

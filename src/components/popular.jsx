@@ -5,11 +5,11 @@ import espresso from '../img/espresso.webp'
 import hazelnutLatte from '../img/hazelnut_latte.webp'
 
 const products = [
-	{ title: 'Vanilla Latte', likes: '21K', rating: 4.8, img: vanillaLatte, alt: 'vanilla_latte' },
-	{ title: 'Espresso', likes: '18K', rating: 4.8, img: espresso, alt: 'esresso' },
+	{ title: 'Vanilla Latte', likes: '21 K', rating: 4.8, img: vanillaLatte, alt: 'vanilla_latte' },
+	{ title: 'Espresso', likes: '18 K', rating: 4.8, img: espresso, alt: 'espresso' },
 	{
 		title: 'Hazelnut Latte',
-		likes: '23K',
+		likes: '23 K',
 		rating: 4.8,
 		img: hazelnutLatte,
 		alt: 'hazelnut latte'

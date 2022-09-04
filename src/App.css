@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 :root {
 	--color-first: #ff902a;
 	--color-second: #2f2105;
 	--color-third: #f9d9aa;
 	--color-forth: #f4ae26;
+	--color-light: #7e7d7a;
 	--color-box-shadow: #0000001a;
 }
 
@@ -22,6 +23,10 @@
 h2 {
 	font-size: 1.9rem;
 	font-weight: 600;
+}
+
+h2 span {
+	border-bottom: solid 4px var(--color-first);
 }
 
 h4 {
@@ -235,7 +240,7 @@ h4 {
 
 .popular-wrapper {
 	margin-top: 1rem;
-	padding-top: calc(7rem);
+	padding-top: 7rem;
 	position: relative;
 }
 
@@ -251,17 +256,15 @@ h4 {
 	margin-left: 2.6rem;
 }
 
-.popular-title span {
-	border-bottom: solid 4px var(--color-first);
-}
-
 .popular-cards-wrapper {
 	display: flex;
-	justify-content: center;
+	gap: 3rem;
+	justify-content: space-between;
 	position: absolute;
 	top: 1rem;
-	gap: 3rem;
-	width: 100%;
+	width: 90%;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 /*** CARD ***/
@@ -269,13 +272,12 @@ h4 {
 	background: white 0 / cover padding-box;
 	border-radius: 1rem;
 	border: solid 0.4rem #ffffff70;
-	box-shadow: -2px 26px 64px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 0px 6px 8px 4px #0000001a;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 	padding: 1rem;
 	position: relative;
-	width: 26%;
 }
 
 .card-container::before {
@@ -331,7 +333,7 @@ h4 {
 	width: 20px;
 }
 
-.card-name-wrapper {
+.card-title-wrapper {
 	display: flex;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -340,10 +342,10 @@ h4 {
 }
 
 .card-cta-wrapper {
+	align-items: center;
 	display: flex;
-	padding: 0 0.5rem;
 	justify-content: space-between;
-	align-content: center;
+	padding: 0 0.5rem;
 }
 
 .card-cta-wrapper > div {
@@ -370,7 +372,6 @@ h4 {
 	background-color: var(--color-first);
 	border-radius: 1rem;
 	height: 32px;
-	margin-left: 0.5rem;
 	padding: 0.45rem;
 	width: 32px;
 }
@@ -379,10 +380,6 @@ h4 {
 .delivery-container {
 	margin-top: 6rem;
 	padding: 0 8rem;
-}
-
-.delivery-container h2 span {
-	border-bottom: solid 4px var(--color-first);
 }
 
 .delivery-items-wrapper {
@@ -466,16 +463,12 @@ h4 {
 	padding: 2rem 0 0 6rem;
 }
 
-.about-content h2 span {
-	border-bottom: solid 4px var(--color-first);
-}
-
 .about-content h4 {
 	width: 80%;
 }
 
 .about-content p {
-	color: #7e7d7a;
+	color: var(--color-light);
 }
 
 .about-cta {
@@ -487,4 +480,31 @@ h4 {
 	margin-top: 1rem;
 	max-width: max-content;
 	padding: 0.6rem 1.5rem;
+}
+
+/*** SPECIAL ***/
+.special-container {
+	margin: 6rem auto 0 auto;
+	width: 80%;
+}
+
+.special-cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.5rem;
+	margin-top: 4rem;
+}
+
+.special-cards-wrapper .card-cart {
+	border-radius: 2rem;
+	height: 33px;
+	transform: scale(1.1);
+	width: 33px;
+}
+
+.special-cards-wrapper .card-description {
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--color-light);
+	width: 60%;
 }
