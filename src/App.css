@@ -5,6 +5,7 @@
 	--color-second: #2f2105;
 	--color-third: #f9d9aa;
 	--color-forth: #f4ae26;
+	--color-fifth: #ffcb7c;
 	--color-light: #7e7d7a;
 	--color-box-shadow: #0000001a;
 }
@@ -507,4 +508,130 @@ h4 {
 	font-weight: 500;
 	color: var(--color-light);
 	width: 60%;
+}
+
+/***  TESTIMONIAL ***/
+.testimonial-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 8rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.testimoinal-bg {
+	background-image: url('./img/testimonial_bg.webp');
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 0 2rem 2rem 0;
+	padding-top: calc(51.27% * 0.65);
+	width: 65%;
+}
+
+.testimoinal-bg::before {
+	border-radius: 1rem;
+}
+
+.testimonial-content {
+	align-items: center;
+	display: flex;
+	position: absolute;
+}
+
+.testimonial-persons-wrapper {
+	display: flex;
+}
+
+.testimonial-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 0 0 0 7rem;
+	width: 52%;
+}
+
+.testimonial-text-wrapper p {
+	color: var(--color-light);
+	width: 60%;
+}
+
+.testimonial-persons-wrapper {
+	gap: 4rem;
+	margin-top: 4.5rem;
+}
+
+.testimonial-persons-wrapper > div {
+	background: transparent 0 / cover padding-box;
+	border: solid 0.4rem #ffcb7c70;
+	display: flex;
+	position: relative;
+}
+
+.testimonial-persons-wrapper > div::before {
+	backdrop-filter: blur(2px);
+	bottom: -0.4rem;
+	content: '';
+	left: -0.4rem;
+	position: absolute;
+	right: -0.4rem;
+	top: -0.4rem;
+	z-index: -1;
+}
+
+.testimonial-comment-wrapper {
+	background: var(--color-fifth) 0 / cover padding-box;
+	border-radius: 1rem;
+	border: solid 0.4rem #ffcb7c80;
+	left: 0.6rem;
+	padding: 0.5rem 0.7rem;
+	position: absolute;
+	top: 10.5rem;
+	transform: scale(0.9);
+	width: 120%;
+}
+
+.testimonial-comment-wrapper::before {
+	border-radius: 1rem;
+	bottom: -0.4rem;
+	content: '';
+	left: -0.4rem;
+	position: absolute;
+	right: -0.4rem;
+	top: -0.4rem;
+	z-index: -1;
+}
+
+.testimonial-commentator {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.testimonial-comment {
+	font-size: 0.9rem;
+}
+
+.testimonial-persons-bullets-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.testimonial-bullets {
+	display: flex;
+	gap: 0.3rem;
+}
+
+.testimonial-bullets span::before {
+	color: var(--color-third);
+	content: '.';
+	cursor: pointer;
+	font-size: 3rem;
+	position: relative;
+	top: -2rem;
+}
+
+.testimonial-bullets span.active::before {
+	color: var(--color-first);
 }

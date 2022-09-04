@@ -4,6 +4,7 @@ import Delivery from './delivery'
 import Hero from './hero'
 import Popular from './popular'
 import Special from './special'
+import Testimonial from './testimonial'
 
 const Home = memo(() => (
 	<div className='home-container'>
@@ -12,6 +13,7 @@ const Home = memo(() => (
 		<Delivery />
 		<AboutUs />
 		<Special />
+		<Testimonial />
 	</div>
 ))
 
