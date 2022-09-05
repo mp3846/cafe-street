@@ -635,3 +635,57 @@ h4 {
 .testimonial-bullets span.active::before {
 	color: var(--color-first);
 }
+
+/*** SUBSCRIBE ***/
+.subscribe-container {
+	align-items: center;
+	background-image: url('../src/img/subscribe.webp');
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 8rem auto;
+	padding-top: calc(33.5% * 0.8);
+	position: relative;
+	width: 80%;
+}
+
+.subscribe-container > div {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.subscribe-container h2 {
+	color: white;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+
+.subscribe-input-wrapper {
+	align-items: center;
+	background-color: #fff;
+	border-radius: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0.2rem 0.3rem;
+	width: 75%;
+}
+
+.subscribe-input-wrapper input {
+	background: none;
+	border: none;
+	outline: none;
+	padding-left: 1rem;
+}
+
+.subscribe-input-wrapper span {
+	background-color: var(--color-second);
+	border-radius: 1.5rem;
+	color: white;
+	font-size: 0.9rem;
+	padding: 0.4rem 1rem;
+}
